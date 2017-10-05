@@ -9,5 +9,5 @@
 import Foundation
 
 protocol LoginRepositoryProtocol: class {
-    
+    func loginWithNormalUser(email: String, password: String) -> Bool
 }

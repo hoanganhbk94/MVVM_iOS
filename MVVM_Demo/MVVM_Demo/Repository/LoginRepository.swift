@@ -10,4 +10,11 @@ import Foundation
 
 class LoginRepository: LoginRepositoryProtocol {
     
+    func loginWithNormalUser(email: String, password: String) -> Bool {
+        if email == "admin" && password == "admin" {
+            return true
+        }
+        return false
+    }
+    
 }
