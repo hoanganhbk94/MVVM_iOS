@@ -10,7 +10,7 @@ import Foundation
 
 class LoginService: LoginServiceProtocol {
     
-    private var _loginRepository: LoginRepositoryProtocol?
+    private var _loginRepository: LoginRepositoryProtocol!
     
     init(loginRepository: LoginRepositoryProtocol) {
         _loginRepository = loginRepository

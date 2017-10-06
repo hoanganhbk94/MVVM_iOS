@@ -13,7 +13,7 @@ class LoginView: BaseView {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    private var _loginViewModel: LoginViewModel?
+    private var _loginViewModel: LoginViewModel!
     
     init(nibName: String, loginViewModel: LoginViewModel) {
         super.init(nibName: nibName)

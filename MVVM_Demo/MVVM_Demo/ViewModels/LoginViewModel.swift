@@ -13,7 +13,7 @@ class LoginViewModel: BaseViewModel {
     private var _email: String = ""
     private var _password: String = ""
     
-    private var _loginService: LoginServiceProtocol?
+    private var _loginService: LoginServiceProtocol!
     
     var email: String {
         get { return _email }
@@ -58,7 +58,6 @@ class LoginViewModel: BaseViewModel {
             completeBlock(false, "Password is empty")
             return false
         }
-        
         return true
     }
     
