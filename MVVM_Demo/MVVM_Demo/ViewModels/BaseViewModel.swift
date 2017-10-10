@@ -7,7 +7,18 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 
 class BaseViewModel: NSObject {
+    let disposeBag = DisposeBag()
+    
+    override init() {
+        super.init()
+    }
+    
+    func applyBinding() {
+        
+    }
     
 }

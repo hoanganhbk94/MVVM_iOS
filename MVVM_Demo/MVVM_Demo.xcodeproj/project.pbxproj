@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B20FD221F8C9E47009072AB /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B20FD211F8C9E47009072AB /* Enums.swift */; };
+		5B20FD241F8C9E86009072AB /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B20FD231F8C9E86009072AB /* Validation.swift */; };
 		5B9BA3561F861D170018BC68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BA3551F861D170018BC68 /* AppDelegate.swift */; };
 		5B9BA35D1F861D170018BC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9BA35C1F861D170018BC68 /* Assets.xcassets */; };
 		5B9BA3601F861D170018BC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9BA35E1F861D170018BC68 /* LaunchScreen.storyboard */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		19024F6E06BC6AC33F49B6B5 /* Pods_MVVM_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B20FD211F8C9E47009072AB /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		5B20FD231F8C9E86009072AB /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		5B9BA3521F861D170018BC68 /* MVVM_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9BA3551F861D170018BC68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B9BA35C1F861D170018BC68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				5B9BA3881F87248B0018BC68 /* Constants.swift */,
+				5B20FD211F8C9E47009072AB /* Enums.swift */,
+				5B20FD231F8C9E86009072AB /* Validation.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -319,7 +325,9 @@
 				5B9BA37D1F86268C0018BC68 /* LoginService.swift in Sources */,
 				5B9BA3561F861D170018BC68 /* AppDelegate.swift in Sources */,
 				5B9BA3811F8626E20018BC68 /* LoginRepositoryProtocol.swift in Sources */,
+				5B20FD241F8C9E86009072AB /* Validation.swift in Sources */,
 				5B9BA37F1F8626D10018BC68 /* LoginRepository.swift in Sources */,
+				5B20FD221F8C9E47009072AB /* Enums.swift in Sources */,
 				5B9BA37B1F86264B0018BC68 /* LoginServiceProtocol.swift in Sources */,
 				5B9BA3831F86276A0018BC68 /* BaseView.swift in Sources */,
 				5B9BA3731F8625460018BC68 /* LoginViewModel.swift in Sources */,

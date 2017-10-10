@@ -8,8 +8,12 @@
 
 import Foundation
 import UIKit
+import RxSwift
+import RxCocoa
 
 class BaseView: UIViewController {
+    
+    let disposeBag = DisposeBag()
     
     init(nibName: String) {
         super.init(nibName: nibName, bundle: nil)
@@ -21,6 +25,11 @@ class BaseView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.createBindingViews()
+    }
+    
+    func createBindingViews() {
     }
     
 }

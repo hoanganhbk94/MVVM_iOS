@@ -12,7 +12,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="MVVM_Demo" customModuleProvider="target">
             <connections>
                 <outlet property="emailTextField" destination="Fxf-xq-9yH" id="6Hz-9H-bfl"/>
+                <outlet property="loginButton" destination="A4Q-xR-RcV" id="bYN-Xe-5qP"/>
                 <outlet property="passwordTextField" destination="yjr-on-sCg" id="Egc-Pf-QMi"/>
+                <outlet property="resultLabel" destination="A8i-36-S6J" id="rYb-6f-Nm2"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -47,14 +49,19 @@
                             <integer key="value" value="8"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
-                    <connections>
-                        <action selector="loginButtonAction:" destination="-1" eventType="touchUpInside" id="RcS-EZ-M3X"/>
-                    </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8i-36-S6J">
+                    <rect key="frame" x="166" y="300" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="A4Q-xR-RcV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="1VT-al-eDx"/>
+                <constraint firstItem="A8i-36-S6J" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C2G-ON-3H4"/>
+                <constraint firstItem="A8i-36-S6J" firstAttribute="top" secondItem="A4Q-xR-RcV" secondAttribute="bottom" constant="40" id="MHE-zw-CM5"/>
                 <constraint firstItem="yjr-on-sCg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Zsd-ss-2uk"/>
                 <constraint firstAttribute="trailing" secondItem="A4Q-xR-RcV" secondAttribute="trailing" constant="20" id="a7r-Wk-ZVX"/>
                 <constraint firstItem="A4Q-xR-RcV" firstAttribute="top" secondItem="yjr-on-sCg" secondAttribute="bottom" constant="40" id="afw-OZ-t8g"/>
