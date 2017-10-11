@@ -8,14 +8,7 @@
 
 import Foundation
 
-enum EmailValid: Int {
-    case empty = 0
-    case invalid
-    case valid
-}
-
-enum PasswordValid: Int {
-    case empty = 0
-    case invalid
-    case valid
+enum LoginType {
+    case success
+    case fail
 }

@@ -11,7 +11,14 @@ import Foundation
 class Validataion {
     
     static func validateEmail(email: String) -> Bool {
-        if email.contains("#") {
+        if !email.contains("@") {
+            return false
+        }
+        return true
+    }
+    
+    static func validatePassword(email: String) -> Bool {
+        if email.characters.count < 6 {
             return false
         }
         return true
