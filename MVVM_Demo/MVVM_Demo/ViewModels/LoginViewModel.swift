@@ -40,5 +40,9 @@ class LoginViewModel: BaseViewModel {
         _loginService = loginService
     }
     
+    func loginWithNormalUser() -> Bool {
+        return _loginService.loginWithNormalUser(email: email.value, password: password.value)
+    }
+    
 }
 

@@ -54,7 +54,11 @@ class LoginView: BaseView {
         _loginViewModel.result.bind(to: self.resultLabel.rx.text).addDisposableTo(disposeBag)
         
         self.loginButton.rx.tap.subscribe(onNext: { _ in
-            self.showAlertView(title: "Success", message: "Login successful")
+            if self._loginViewModel.loginWithNormalUser() {
+                self.showAlertView(title: "Success", message: "Login successful")
+            } else {
+                self.showAlertView(title: "Fail", message: "Login fail")
+            }
         }).addDisposableTo(disposeBag)
         
     }
