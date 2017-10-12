@@ -17,21 +17,27 @@ class LoginViewModel: BaseViewModel {
     var email = Variable<String>("")
     var password = Variable<String>("")
     
-    var didPressButton: Observable<Bool> = Observable.never()
+    var result: Observable<String> {
+        return Observable.combineLatest(email.asObservable(), password.asObservable(), resultSelector: { (emailText, passwordText) -> String in
+            if emailText == "" {
+                return passwordText
+            } else if passwordText == "" {
+                return emailText
+            } else {
+                return "\(emailText) - \(passwordText)"
+            }
+        })
+    }
     
     var isValidObservable: Observable<Bool> {
         return Observable.combineLatest(email.asObservable(), password.asObservable(), resultSelector: { (emailText, passwordText) -> Bool in
-            return Validataion.validateEmail(email: emailText) && Validataion.validatePassword(email: passwordText)
+            return Validation.validateEmail(email: emailText) && Validation.validatePassword(email: passwordText)
         })
     }
     
     init(loginService: LoginServiceProtocol) {
         super.init()
         _loginService = loginService
-    }
-    
-    override func applyBinding() {
-        
     }
     
 }

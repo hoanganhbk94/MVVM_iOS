@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Validataion {
+class Validation {
     
     static func validateEmail(email: String) -> Bool {
         if !email.contains("@") {

@@ -36,7 +36,7 @@ class LoginView: BaseView {
     
     func showAlertView(title: String, message: String) {
         let alertView = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        let okAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
         alertView.addAction(okAction)
         self.present(alertView, animated: true, completion: nil)
     }
@@ -51,12 +51,12 @@ class LoginView: BaseView {
         self.passwordTextField.rx.text.map { $0 ?? "" }.bind(to: _loginViewModel.password).addDisposableTo(disposeBag)
         
         _loginViewModel.isValidObservable.bind(to: self.loginButton.rx.isEnabled).addDisposableTo(disposeBag)
+        _loginViewModel.result.bind(to: self.resultLabel.rx.text).addDisposableTo(disposeBag)
         
         self.loginButton.rx.tap.subscribe(onNext: { _ in
             self.showAlertView(title: "Success", message: "Login successful")
         }).addDisposableTo(disposeBag)
         
-        _loginViewModel.applyBinding()
     }
     
 }
