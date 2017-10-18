@@ -1,13 +1,14 @@
 //
-//  LoginRepositoryProtocol.swift
+//  UserRepositoryProtocol.swift
 //  MVVM_Demo
 //
-//  Created by Mai Hoang Anh on 10/5/17.
+//  Created by Anh Mai on 10/18/17.
 //  Copyright © 2017 eastgate. All rights reserved.
 //
 
 import Foundation
 
-protocol LoginRepositoryProtocol: class {
+protocol UserRepositoryProtocol: class {
     func loginWithNormalUser(email: String, password: String) -> Bool
+    func fetchAllUser() -> [UserEntity]
 }

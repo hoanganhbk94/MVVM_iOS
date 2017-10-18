@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import RxSwift
 
 protocol LoginServiceProtocol: class {
     func loginWithNormalUser(email: String, password: String) -> Bool

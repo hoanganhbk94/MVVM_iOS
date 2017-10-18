@@ -9,15 +9,13 @@
 import Foundation
 
 class LoginService: LoginServiceProtocol {
+    private var _userRepository: UserRepositoryProtocol!
     
-    private var _loginRepository: LoginRepositoryProtocol!
-    
-    init(loginRepository: LoginRepositoryProtocol) {
-        _loginRepository = loginRepository
+    init(userRepository: UserRepositoryProtocol) {
+        _userRepository = userRepository
     }
     
     func loginWithNormalUser(email: String, password: String) -> Bool {
-        return _loginRepository!.loginWithNormalUser(email: email, password: password)
+        return _userRepository!.loginWithNormalUser(email: email, password: password)
     }
-    
 }

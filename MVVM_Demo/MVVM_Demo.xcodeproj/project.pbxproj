@@ -18,13 +18,20 @@
 		5B9BA3751F8625550018BC68 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BA3741F8625550018BC68 /* UserEntity.swift */; };
 		5B9BA37B1F86264B0018BC68 /* LoginServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BA37A1F86264B0018BC68 /* LoginServiceProtocol.swift */; };
 		5B9BA37D1F86268C0018BC68 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BA37C1F86268C0018BC68 /* LoginService.swift */; };
-		5B9BA37F1F8626D10018BC68 /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BA37E1F8626D10018BC68 /* LoginRepository.swift */; };
-		5B9BA3811F8626E20018BC68 /* LoginRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BA3801F8626E20018BC68 /* LoginRepositoryProtocol.swift */; };
 		5B9BA3831F86276A0018BC68 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BA3821F86276A0018BC68 /* BaseView.swift */; };
 		5B9BA3851F8628010018BC68 /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BA3841F8628010018BC68 /* BaseEntity.swift */; };
 		5B9BA3871F8628420018BC68 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BA3861F8628420018BC68 /* BaseViewModel.swift */; };
 		5B9BA3891F87248B0018BC68 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9BA3881F87248B0018BC68 /* Constants.swift */; };
 		8C1B2758235EC36BE47E10AE /* Pods_MVVM_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19024F6E06BC6AC33F49B6B5 /* Pods_MVVM_Demo.framework */; };
+		AB21FC3D1F973D6B0097D607 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21FC3B1F973D6B0097D607 /* HomeView.swift */; };
+		AB21FC3E1F973D6B0097D607 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB21FC3C1F973D6B0097D607 /* HomeView.xib */; };
+		AB21FC401F973E2A0097D607 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21FC3F1F973E2A0097D607 /* HomeViewModel.swift */; };
+		AB21FC421F973E760097D607 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21FC411F973E760097D607 /* HomeService.swift */; };
+		AB21FC441F973E960097D607 /* HomeServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21FC431F973E960097D607 /* HomeServiceProtocol.swift */; };
+		AB21FC4A1F973F910097D607 /* UserRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21FC491F973F910097D607 /* UserRepositoryProtocol.swift */; };
+		AB21FC4C1F973FF30097D607 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21FC4B1F973FF30097D607 /* UserRepository.swift */; };
+		AB21FC4F1F974E7A0097D607 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB21FC4D1F974E7A0097D607 /* UserTableViewCell.swift */; };
+		AB21FC501F974E7A0097D607 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB21FC4E1F974E7A0097D607 /* UserTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,13 +49,20 @@
 		5B9BA3741F8625550018BC68 /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		5B9BA37A1F86264B0018BC68 /* LoginServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginServiceProtocol.swift; sourceTree = "<group>"; };
 		5B9BA37C1F86268C0018BC68 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
-		5B9BA37E1F8626D10018BC68 /* LoginRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
-		5B9BA3801F8626E20018BC68 /* LoginRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRepositoryProtocol.swift; sourceTree = "<group>"; };
 		5B9BA3821F86276A0018BC68 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		5B9BA3841F8628010018BC68 /* BaseEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
 		5B9BA3861F8628420018BC68 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		5B9BA3881F87248B0018BC68 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		6E27807CDDB40EF8A62D66BF /* Pods-MVVM_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM_Demo/Pods-MVVM_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		AB21FC3B1F973D6B0097D607 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AB21FC3C1F973D6B0097D607 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		AB21FC3F1F973E2A0097D607 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AB21FC411F973E760097D607 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		AB21FC431F973E960097D607 /* HomeServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceProtocol.swift; sourceTree = "<group>"; };
+		AB21FC491F973F910097D607 /* UserRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryProtocol.swift; sourceTree = "<group>"; };
+		AB21FC4B1F973FF30097D607 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		AB21FC4D1F974E7A0097D607 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		AB21FC4E1F974E7A0097D607 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		D68E23766D4A620D14E3ADFC /* Pods-MVVM_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM_Demo/Pods-MVVM_Demo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,7 +144,7 @@
 		5B9BA3691F8624E30018BC68 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				5B9BA37E1F8626D10018BC68 /* LoginRepository.swift */,
+				AB21FC4B1F973FF30097D607 /* UserRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -139,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				5B9BA37C1F86268C0018BC68 /* LoginService.swift */,
+				AB21FC411F973E760097D607 /* HomeService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -158,6 +173,7 @@
 			children = (
 				5B9BA3861F8628420018BC68 /* BaseViewModel.swift */,
 				5B9BA3721F8625460018BC68 /* LoginViewModel.swift */,
+				AB21FC3F1F973E2A0097D607 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -168,6 +184,10 @@
 				5B9BA3821F86276A0018BC68 /* BaseView.swift */,
 				5B9BA36E1F8625310018BC68 /* LoginView.swift */,
 				5B9BA36F1F8625310018BC68 /* LoginView.xib */,
+				AB21FC3B1F973D6B0097D607 /* HomeView.swift */,
+				AB21FC3C1F973D6B0097D607 /* HomeView.xib */,
+				AB21FC4D1F974E7A0097D607 /* UserTableViewCell.swift */,
+				AB21FC4E1F974E7A0097D607 /* UserTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				5B9BA37A1F86264B0018BC68 /* LoginServiceProtocol.swift */,
+				AB21FC431F973E960097D607 /* HomeServiceProtocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -183,7 +204,7 @@
 		5B9BA3791F8626370018BC68 /* Repositorys */ = {
 			isa = PBXGroup;
 			children = (
-				5B9BA3801F8626E20018BC68 /* LoginRepositoryProtocol.swift */,
+				AB21FC491F973F910097D607 /* UserRepositoryProtocol.swift */,
 			);
 			path = Repositorys;
 			sourceTree = "<group>";
@@ -259,8 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B9BA3601F861D170018BC68 /* LaunchScreen.storyboard in Resources */,
+				AB21FC3E1F973D6B0097D607 /* HomeView.xib in Resources */,
 				5B9BA35D1F861D170018BC68 /* Assets.xcassets in Resources */,
 				5B9BA3711F8625310018BC68 /* LoginView.xib in Resources */,
+				AB21FC501F974E7A0097D607 /* UserTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,19 +342,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB21FC441F973E960097D607 /* HomeServiceProtocol.swift in Sources */,
 				5B9BA3701F8625310018BC68 /* LoginView.swift in Sources */,
 				5B9BA3871F8628420018BC68 /* BaseViewModel.swift in Sources */,
 				5B9BA3851F8628010018BC68 /* BaseEntity.swift in Sources */,
+				AB21FC401F973E2A0097D607 /* HomeViewModel.swift in Sources */,
+				AB21FC3D1F973D6B0097D607 /* HomeView.swift in Sources */,
 				5B9BA37D1F86268C0018BC68 /* LoginService.swift in Sources */,
 				5B9BA3561F861D170018BC68 /* AppDelegate.swift in Sources */,
-				5B9BA3811F8626E20018BC68 /* LoginRepositoryProtocol.swift in Sources */,
 				5B20FD241F8C9E86009072AB /* Validation.swift in Sources */,
-				5B9BA37F1F8626D10018BC68 /* LoginRepository.swift in Sources */,
+				AB21FC421F973E760097D607 /* HomeService.swift in Sources */,
+				AB21FC4A1F973F910097D607 /* UserRepositoryProtocol.swift in Sources */,
 				5B20FD221F8C9E47009072AB /* Enums.swift in Sources */,
+				AB21FC4F1F974E7A0097D607 /* UserTableViewCell.swift in Sources */,
 				5B9BA37B1F86264B0018BC68 /* LoginServiceProtocol.swift in Sources */,
 				5B9BA3831F86276A0018BC68 /* BaseView.swift in Sources */,
 				5B9BA3731F8625460018BC68 /* LoginViewModel.swift in Sources */,
 				5B9BA3751F8625550018BC68 /* UserEntity.swift in Sources */,
+				AB21FC4C1F973FF30097D607 /* UserRepository.swift in Sources */,
 				5B9BA3891F87248B0018BC68 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

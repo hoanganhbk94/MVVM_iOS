@@ -18,17 +18,7 @@ class LoginView: BaseView {
     
     @IBOutlet weak var resultLabel: UILabel!
     
-    private var _loginViewModel: LoginViewModel!
-    
-    init(nibName: String, loginViewModel: LoginViewModel) {
-        super.init(nibName: nibName)
-        
-        _loginViewModel = loginViewModel
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
+    private var _loginViewModel = LoginViewModel(loginService: LoginService(userRepository: UserRepository()))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,7 +45,8 @@ class LoginView: BaseView {
         
         self.loginButton.rx.tap.subscribe(onNext: { _ in
             if self._loginViewModel.loginWithNormalUser() {
-                self.showAlertView(title: "Success", message: "Login successful")
+                let homeView = HomeView(nibName: "HomeView")
+                self.navigationController?.pushViewController(homeView, animated: true)
             } else {
                 self.showAlertView(title: "Fail", message: "Login fail")
             }

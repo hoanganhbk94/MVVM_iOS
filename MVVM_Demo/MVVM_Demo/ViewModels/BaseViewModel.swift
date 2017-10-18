@@ -11,7 +11,7 @@ import RxSwift
 import RxCocoa
 
 class BaseViewModel: NSObject {
-    
+
     let disposeBag = DisposeBag()
     
     override init() {
