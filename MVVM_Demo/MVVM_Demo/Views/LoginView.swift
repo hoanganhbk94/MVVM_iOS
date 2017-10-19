@@ -11,11 +11,9 @@ import RxSwift
 import RxCocoa
 
 class LoginView: BaseView {
-    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-    
     @IBOutlet weak var resultLabel: UILabel!
     
     private var _loginViewModel = LoginViewModel(loginService: LoginService(userRepository: UserRepository()))
@@ -51,7 +49,6 @@ class LoginView: BaseView {
                 self.showAlertView(title: "Fail", message: "Login fail")
             }
         }).addDisposableTo(disposeBag)
-        
     }
     
 }

@@ -11,7 +11,6 @@ import RxSwift
 import RxCocoa
 
 class LoginViewModel: BaseViewModel {
-    
     private var _loginService: LoginServiceProtocol!
     
     var email = Variable<String>("")

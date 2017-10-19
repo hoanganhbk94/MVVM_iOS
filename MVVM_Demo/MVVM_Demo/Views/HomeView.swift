@@ -11,7 +11,6 @@ import RxSwift
 import RxCocoa
 
 class HomeView: BaseView {
-    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {

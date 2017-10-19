@@ -9,7 +9,6 @@
 import UIKit
 
 class UserTableViewCell: UITableViewCell {
-
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var passwordLabel: UILabel!
     

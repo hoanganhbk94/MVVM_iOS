@@ -14,5 +14,4 @@ class HomeViewModel: BaseViewModel {
     init(homeService: HomeServiceProtocol) {
         _homeService = homeService
     }
-    
 }

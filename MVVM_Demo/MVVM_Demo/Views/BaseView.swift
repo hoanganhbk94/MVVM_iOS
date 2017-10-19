@@ -6,13 +6,11 @@
 //  Copyright © 2017 eastgate. All rights reserved.
 //
 
-import Foundation
 import UIKit
 import RxSwift
 import RxCocoa
 
 class BaseView: UIViewController {
-    
     let disposeBag = DisposeBag()
     
     init(nibName: String) {
@@ -31,6 +29,5 @@ class BaseView: UIViewController {
     
     func createBindingViews() {
     }
-    
 }
 

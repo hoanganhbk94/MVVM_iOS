@@ -9,7 +9,6 @@
 import Foundation
 
 class UserEntity: BaseEntity {
-    
     var email: String = ""
     var password: String = ""
     
@@ -17,5 +16,4 @@ class UserEntity: BaseEntity {
         self.email = email
         self.password = password
     }
-    
 }

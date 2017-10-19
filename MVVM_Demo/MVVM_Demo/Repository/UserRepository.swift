@@ -22,7 +22,6 @@ class UserRepository: UserRepositoryProtocol {
             let userEntity = UserEntity(email: "Email \(index)", password: "Password \(index)")
             arrUsers.append(userEntity)
         }
-        
         return arrUsers
     }
 }

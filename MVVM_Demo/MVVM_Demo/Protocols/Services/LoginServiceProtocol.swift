@@ -11,3 +11,4 @@ import Foundation
 protocol LoginServiceProtocol: class {
     func loginWithNormalUser(email: String, password: String) -> Bool
 }
+
